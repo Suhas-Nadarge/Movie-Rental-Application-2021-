@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="./css/movie.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="./js/movie.js"></script>
+
+</head>
+
+<body>
+
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Movie App</h1>
+        </div>
+        <div>
+            <label for="search">Search Movie:</label>
+            <input type="search" name="search" id="search" value="" placeholder="Search movie ">
+        </div>
+       <!-- Main div where all movies list will displayed  -->
+        <div role="main" id="main" class="ui-content">
+
+        </div>
+        <!-- Main Div ends here -->
+
+        <a href="#popupLogin" data-rel="popup" id="shows" data-position-to="window" style="display: none;"
+            data-transition="pop">Sign in</a>
+        <input type="hidden" id="dttxt">
+        <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all" style="max-width:500px;">
+        <!-- Rent Popup starts -->
+            <div style="padding:10px 20px;">
+                <h3>Please Fill details1</h3>
+                <label for="un" class="ui-hidden-accessible">Name:</label>
+                <input type="email" name="user" id="name"  required value="" placeholder="Name " data-theme="a">
+                <label for="un" class="ui-hidden-accessible">Email:</label>
+                <input type="email" name="user" id="email" required value="" placeholder="Email" data-theme="a">
+                <select class="ui-select typevdio" id="keymv">
+                    <option value="4">HD at 4 Euro</option>
+                    <option value="6">Full HD at 6 Euro</option>
+                    <option value="8">4K at 8 Euro </option>
+                </select>
+                <label for="pw" class="ui-hidden-accessible">Phone:</label>
+                <input type="number" name="phone" id="phone" value="" placeholder="Phone number" data-theme="a">
+                <button id="rnt" class="ui-btn ui-corner-all rnt  ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Rent
+                </button>
+            </div>
+            <!-- Rent popup end -->
+        </div>
+        <div data-role="footer">
+            <h4></h4>
+        </div><!-- /footer -->
+    </div>
+
+
+    <!-- Start of Details page: #two -->
+    <div data-role="page" id="details" data-theme="a">
+
+        <div data-role="header">
+            <h1>Movie Details</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="">
+            <a href="index.html" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">Back to
+                home</a>
+            <div id="seccond">
+
+            </div>
+            <a href="#popupLogin1" data-rel="popup" id="shows1" data-position-to="window" style="display: none;"
+                data-transition="pop">Sign in</a>
+            <input type="hidden" id="dttxt1">
+            <div data-role="popup" id="popupLogin1" data-theme="a" class="ui-corner-all" style="max-width:500px;">
+        <!-- Rent Popup starts -->
+                <div style="padding:10px 20px;">
+                    <h3>Please Fill details</h3>
+                    <label for="un" class="ui-hidden-accessible">Name:</label>
+                    <input type="email" name="user" id="name" value="" placeholder="Name " data-theme="a">
+                    <label for="un" class="ui-hidden-accessible">Email:</label>
+                    <input type="email" name="user" id="email" value="" placeholder="Email" data-theme="a">
+                    <select class="ui-select typevdio" id="keymv">
+                        <option value="4">HD at 4 Euro</option>
+                        <option value="6">Full HD at 6 Euro</option>
+                        <option value="8">4K at 8 Euro </option>
+                    </select>
+                    <label for="pw" class="ui-hidden-accessible">Phone:</label>
+                    <input type="number" name="phone" id="phone" value="" placeholder="Phone number" data-theme="a">
+                    <button id="rnt" class="ui-btn  rnt ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Rent
+                    </button>
+                </div>
+       <!-- Rent Popup ends -->
+            </div>
+            <a href="index.html" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">Back to
+                home</a>
+
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4></h4>
+        </div><!-- /footer -->
+    </div><!-- /End of detail page #two -->
+
+</body>
+
+</html>

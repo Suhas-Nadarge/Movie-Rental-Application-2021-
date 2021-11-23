@@ -1,0 +1,77 @@
+.ui-header {
+    background-color: green !important;
+    color: white !important;
+}
+
+.ui-page {
+    background-color: turquoise;
+}
+
+.ui-body {
+    margin-top: 10px;
+}
+
+.ui-btn {
+    background-color: turquoise !important;
+}
+
+.img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.ul {
+    list-style: none;
+    margin: 0px;
+    padding: 3 px;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15 px;
+    margin-left: -15 px;
+}
+
+.pop {
+    width: 70% !important;
+    max-width: 800px !important;
+}
+
+.details {
+    width: 100%;
+}
+
+.detailsaa {
+    width: 100%;
+}
+
+/* Second breakpoint at 800px */
+/* Adjusts column proportions, tweaks base H1 */
+@media all and (min-width: 50em) {
+    .img {
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .imgdiv {
+        width: 30%;
+    }
+
+    .imgdiv .img {
+        width: 80%;
+    }
+
+    .details {
+        width: 65%;
+        float: right;
+    }
+
+    .detailsaa {
+        width: 35%;
+        float: right;
+    }
+}
